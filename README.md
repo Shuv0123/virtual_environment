@@ -21,8 +21,41 @@ Back in the days, we used to have two separate team, the development team and th
  - Continuous delivery (engage with operation team 'development and pre-production')
  - Continuous deployment (running tests to production is called continuous deployment)
 
- # DevOps four key Pillars
+ # DevOps four key Pillars (cloud computing)
 - Ease of use
 - Flexibility (Agile, Scrum)
 - RObustness (speed)
 - Cost effective
+# What is Cloud Computing?
+
+
+
+# Why Cloud Computing (benefits)?
+
+
+# Security
+
+
+# AWS
+https://aws.amazon.com/about-aws/global-infrastructure/
+
+# What are regions?
+Are datacenters that are available for us to use. For AWS they are physical data center structures
+
+
+# AWS best practices:
+- Naming convention: eng110_shuvo
+- AWS services i.e EC2 instances should turned off/stopped/terminated by 1800 everyday, if you would like to use later than 1800 please ask, latest time 2000.
+- Only use Ireland -eu-west-1/a/b/c
+-AWS keys must not be shared with anyone - public cloud or platform/github etc
+
+-eng119.pem move to .ssh folder on local machine 
+-prem/localhost/ local data center
+- ssh - chmod 400 file.pem
+- ports -80 - 3000
+
+# 
+
+
+
+
