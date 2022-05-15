@@ -14,10 +14,12 @@
 
 
 ## Vagrant commands
-- to boot up vagrant - `vagrant up`
-- to delete vagrant - `vagrant destroy`
-- to pause vagrant - `vagrant halt`
-- to check status of machine -  `vagrant status`
+- create a VM `vagrant up`
+- check status `vagrant status`
+- delete VM `vagrant destroy`
+- pause `vagrant halt`
+- To update `vagrant reload`
+- How to access VM `vagrant ssh`
 
 
 Whenever we add new functionality to our vagrant file that means we need to let the virtual box know there are new sets of commands so that it can implement those instructions inside the VM. There are two options we either do `vagrant up` followed by `vagrant destroy` so that it reboots with the newly added data or we can do `vagrant reload` which is quicker (if this doesn’t work use the other options). When we do vagrant reload, what happens is that vagrant goes to the local machine starts to read the vagrantfile pickup the ip address and tells virtualbox to inject this ip into this virtual machine to use the network available in the localhost.
