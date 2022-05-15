@@ -29,5 +29,8 @@ Back in the days, we used to have two separate team, the development team and th
 - RObustness (speed)
 - Cost effective
 
+## EXTRA interview Questions 
+- How DevOps provide Cost Effectiveness... give an example
+
 
 >[Virtual Machine & Linux commands](virtual_machine.md) 
