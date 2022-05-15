@@ -5,27 +5,26 @@
 
 ![](images/VM.png)
 
-# how to set up internet on VM?
+## how to set up internet on VM?
 
 - to make sure that we have internet available from our local host
 - `sudo apt-get update`. if this does not work, `exit` the vagrant and do `vagrant reload`
 - `sudo apt-get upgrade`
 
----
 
-# Vagrant commands
+
+## Vagrant commands
 - to boot up vagrant - `vagrant up`
 - to delete vagrant - `vagrant destroy`
 - to pause vagrant - `vagrant halt`
 - to check status of machine -  `vagrant status`
 
----
 
-Whenever we add new functionality to our vagrant file that means we need to let the virtual box know there are new sets of commands so that it can implement those instructions inside the VM. There are two options we either do 'vagrant up' followed by 'vagrant destroy' so that it reboots with the newly added data or we can do 'vagrant reload' which is quicker (if this doesn’t work use the other options). When we do vagrant reload, what happens is that vagrant goes to the local machine starts to read the vagrantfile pickup the ip address and tells virtualbox to inject this ip into this virtual machine to use the network available in the localhost.
-
+Whenever we add new functionality to our vagrant file that means we need to let the virtual box know there are new sets of commands so that it can implement those instructions inside the VM. There are two options we either do `vagrant up` followed by `vagrant destroy` so that it reboots with the newly added data or we can do `vagrant reload` which is quicker (if this doesn’t work use the other options). When we do vagrant reload, what happens is that vagrant goes to the local machine starts to read the vagrantfile pickup the ip address and tells virtualbox to inject this ip into this virtual machine to use the network available in the localhost.
 
 
-### Linux - Ubuntu distro
+
+## Linux - Ubuntu distro
 - Update  `sudo apt-get update -y`
 - Upgrade `sudo apt-get upgrade -y`
 - How to start a service `sudo systemctl start name_service`
@@ -57,10 +56,9 @@ Whenever we add new functionality to our vagrant file that means we need to let 
 
 ## Environment Variables
 
-- how to check exisiting 'Env var', 'printenv'
-- how to print specific env var
-- how to create an env var, we use key word 'export' eg. export NAME=Shuvo
-- how to manke an env var persitent on linux ubuntu - 'nano .profile' and 'export EnvName=value' at the bottom of the file. Then 'exit
+- how to check exisiting Environmnet variable, `printenv`
+- how to create an env var, we use key word `export` eg. `export `NAME=Shuvo`
+- how to manke an env var persitent on linux ubuntu - `nano .profile` and `export EnvName=value` at the bottom of the file. Then exit
 
 
 ## File permisions
