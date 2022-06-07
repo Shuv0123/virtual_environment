@@ -123,3 +123,9 @@ server {
 - How to run the tests (env test written in ruby), the ruby test which comands to use?
 - 
 
+
+
+restful api
+incremental and iterative in agile
+agile and scrum
+high level programming language and a low level programming language
