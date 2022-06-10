@@ -1,7 +1,16 @@
-# Virtual Environment
-- A Virtual Environment is an environment for everyone to use, weather is development, testing or deployment whatever it may be. We create this environmnet so that evryone has the same tool to collaborate together, this is beneficial because no matter what device we use we gonna end up with the same results.
+# Virtualization 
+![](images/virtualization.png)
+
+Virtualization is the creation of a virtual computers called virtual machines (VMs) within your local host where the VM share runs its own operating system (OS) and behaves like an independent computer, even though it is running on just a portion of the actual underlying computer hardware.
+
+## Virtual Environment / Development Environment
+- A Virtual Environment is an environment for everyone to use, weather is development, testing or deployment whatever it may be. We create this environmnet so that evryone has the same tool to collaborate together, this is beneficial because no matter what device we use we gonna end up with the same results. Development environments enable developers to create and innovate without breaking something in a live environment.
 
 - I used Vagrant to create a virtual environment through a vegrantfile, which was created in my local machine(host). In order for Vagrant to create a virtual machine I used VirtualBox, which all together provided information to the Virtual machine to run.
+
+### Vagrant
+- Vagrant is a software tool used to create, manage and provision VMs
+
 
 ![](images/VM.png)
 
@@ -74,6 +83,8 @@ sudo systemctl start nginx
 # enable nginx
 sudo systemctl enable nginx
 
+sudo cp /home/vagrant/app/app/extra/default /etc/nginx/sites-available/default
+
 #install git
 sudo apt-get install git -y
 
@@ -85,13 +96,13 @@ curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
 sudo apt install -y nodejs
 
 # install pm2
-# sudo npm installpm2 -g
+# sudo npm installpm2 -g 
 #npm
-cd  app/app
+cd app/app
 
 npm install
 
-npm  start &
+npm start &
 
 ```
 - change the file to exe `chmod +x provision.sh`
