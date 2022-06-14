@@ -91,7 +91,7 @@ sudo apt-get install git -y
 #install nodejs
 sudo apt install python-software-properties -y
 
-curl -sL https://deb.nodesource.com/setup_6.x | sudo -E bash -
+curl -sL https://deb.nodesource.com/setup_12.x | sudo -E bash -
 
 sudo apt install -y nodejs
 
